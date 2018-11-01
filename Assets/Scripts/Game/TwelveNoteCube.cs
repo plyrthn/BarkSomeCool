@@ -62,10 +62,10 @@ public class TwelveNoteCube : MonoBehaviour {
                 tmp = 0f;
                 break;
             case _cutType._left:
-                tmp = 90f;
+                tmp = 280f;
                 break;
             case _cutType._right:
-                tmp = 280f;
+                tmp = 90f;
                 break;
             case _cutType._topLeft:
                 tmp = 45f;
