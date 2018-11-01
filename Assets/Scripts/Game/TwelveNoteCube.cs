@@ -53,10 +53,10 @@ public class TwelveNoteCube : MonoBehaviour {
         switch (note._cutDirection)
         {
             case _cutType._bottomLeft:
-                tmp = 135f;
+                tmp = 225f;
                 break;
             case _cutType._bottomRight:
-                tmp = 225;
+                tmp = 135f;
                 break;
             case _cutType._down:
                 tmp = 0f;
@@ -68,10 +68,10 @@ public class TwelveNoteCube : MonoBehaviour {
                 tmp = 90f;
                 break;
             case _cutType._topLeft:
-                tmp = 45f;
+                tmp = 315f;
                 break;
             case _cutType._topRight:
-                tmp = 315f;
+                tmp = 45f;
                 break;
             case _cutType._up:
                 tmp = 180f;
