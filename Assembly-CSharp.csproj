@@ -341,6 +341,7 @@
     <None Include="Assets\Resources\Graphics\Materials\Shader\Render\MKGlowCompositeInc.cginc" />
     <None Include="Assets\Resources\Graphics\Materials\Shader\Variants_SelectiveMode\Cutout\MK_Cutout-DiffuseBumped.shader" />
     <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\Resources\Graphics\Shaders\BombShader.shader" />
     <None Include="Assets\Scripts\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/mike/Documents/GitHub/BeatSaberClone/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

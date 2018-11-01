@@ -58,22 +58,25 @@ public class TwelveNoteGame : MonoBehaviour {
         {
             SpawnNote(transform, note);
         }
-        Comparison<NoteData> comparison = (x, y) => x._time.CompareTo(y._time);
-        notes.Sort(comparison);
+
+        Comparison<NoteData> noteArrange = (x, y) => x._time.CompareTo(y._time);
+        notes.Sort(noteArrange);
         
         foreach (BeatSaberEvents _event in te._events)
         {
             SpawnEvent(transform, _event);
         }
-        Comparison<BeatSaberEvents> comparison = (x, y) => x._time.CompareTo(y._time);
-        beatSaberEvents.Sort(comparison);
+
+        Comparison<BeatSaberEvents> eventArrange = (x, y) => x.Time.CompareTo(y.Time);
+        beatSaberEvents.Sort(eventArrange);
         
         foreach (ObstacleData _obstacle in te._obstacles)
         {
             SpawnObstacle(transform, _obstacle);
         }
-        Comparison<ObstacleData> comparison = (x, y) => x._time.CompareTo(y._time);
-        obstacleDatas.Sort(comparison);
+
+        Comparison<ObstacleData> obstacleArrange = (x, y) => x._time.CompareTo(y._time);
+        obstacleDatas.Sort(obstacleArrange);
     }
 
     void SpawnNote(Transform parent, NoteData note)
